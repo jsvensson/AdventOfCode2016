@@ -61,5 +61,27 @@ namespace AdventOfCode.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void L100_L100_Returns_200()
+        {
+            const string input = "L100, L100";
+            const int expected = 200;
+
+            int actual = Day01.Solve(input);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void R2_L2_L2_L2_Returns_0()
+        {
+            const string input = "R2, L2, L2, L2";
+            const int expected = 0;
+
+            int actual = Day01.Solve(input);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
