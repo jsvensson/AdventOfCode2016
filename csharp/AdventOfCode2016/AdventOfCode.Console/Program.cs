@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine(Day01.Solve(ProblemLoader.Load("01.txt")));
+            var test = new Day01A();
+
+            System.Console.WriteLine(test.Solve(ProblemLoader.Load("01.txt")));
         }
     }
 }
