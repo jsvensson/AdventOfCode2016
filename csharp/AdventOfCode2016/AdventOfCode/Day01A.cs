@@ -7,12 +7,10 @@ namespace AdventOfCode
     public class Day01A
     {
         public Position Position;
-        public Facing Facing;
 
         public int Solve(string input)
         {
             Position = new Position();
-            Facing = Facing.North;
 
             // Reformat input
             string[] format = {", "};
@@ -35,7 +33,6 @@ namespace AdventOfCode
         }
 
         #region Support methods
-
         private static Instruction ParseDocument(string input)
         {
             var instruction = new Instruction();
@@ -55,7 +52,7 @@ namespace AdventOfCode
 
             return instruction;
         }
-#endregion
+        #endregion Support methods
     }
 
     #region Extension methods
@@ -102,7 +99,7 @@ namespace AdventOfCode
             return position;
         }
     }
-#endregion
+    #endregion Extension methods
 
     #region Support structures
     public struct Instruction
@@ -131,5 +128,5 @@ namespace AdventOfCode
         South,
         West
     }
-#endregion
+#endregion Support structures
 }
